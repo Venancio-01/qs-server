@@ -22,9 +22,7 @@ router.get("/", (ctx, next) => {
 router.get("/api", function (ctx) {
   //get params = ctx.request.query
   const params = ctx.request.query;
-  console.log(params);
-  console.log(params);
-  console.log(ctx);
+  SendEmail('hello routerApi')
   ctx.body = "hello routerApi";
 });
 
